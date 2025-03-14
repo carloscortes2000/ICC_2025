@@ -25,6 +25,6 @@
    - Ingresa 2 para probar el funcionamiento de For.
    - Ingresa 3 para probar el funcionamiento de do-while.
    - Ingresa 0 para salir del programa.
-   - Una vez ingresado cualquiera de las primeras 3 ociones se mostrará en pantalla el resultado obtenido
+   - Una vez ingresado cualquiera de las primeras 3 opciones se mostrará en pantalla el resultado obtenido
 
 
