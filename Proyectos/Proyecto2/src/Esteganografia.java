@@ -139,11 +139,11 @@ public class Esteganografia {
             String palabraM = scM.next();
             String palabraE = scE.next();
             // Asuminmos que ambas palabras tienen la misma longitud.
-            for (int i = 0; i < palabraM.length(); i++) {
-                if (palabraM.charAt(i) != palabraE.charAt(i)) {
-                    textoOculto += palabraM.charAt(i);
-                }
+            for (int i = 0; i < Math.min(palabraM.length(), palabraE.length()); i++) {
+            if (palabraM.charAt(i) != palabraE.charAt(i)) {
+                textoOculto += palabraM.charAt(i);
             }
+        }
         }
         scM.close();
         scE.close();
@@ -161,7 +161,7 @@ public class Esteganografia {
         do {
             System.out.println("\n************************************ Menú ************************************");
             System.out.println("1. Descifrar mensaje con cifrado nulo (usando índice n dado)");
-            System.out.println("2. Descifrar mensaje con cifrado nulo (usando espacios al final para obtener n)");
+            System.out.println("2. Descifrar mensaje con cifrado nulo (usando espacios al final)");
             System.out.println("3. Buscar nombre oculto en un mensaje");
             System.out.println("4. Descifrar mensaje oculto (palabras marcadas)");
             System.out.println("5. Descifrar mensaje oculto (letras marcadas)");
@@ -174,7 +174,7 @@ public class Esteganografia {
             switch (opcion) {
                 case 1:
                     System.out.println("\nPruebe el siguiente texto: \nPRESIDENT'S EMBARGO RULING SHOULD HAVE IMMEDIATE NOTICE. GRAVE SITUATION AFFECTING INTERNATIONAL LAW. STATEMENT FORESHADOWS RUIN OF MANY NEUTRALS. YELLOW JOURNALS UNIFYING NATIONAL EXCITEMENT IMMENSELY.\n");
-                    System.out.println("Introduce el mensaje original:");
+                    System.out.print("Introduce el mensaje original:");
                     String original1 = sc.nextLine();
                     System.out.print("\nUtilice n = 1: \n");
                     System.out.print("Introduce el índice(n): ");
@@ -210,10 +210,10 @@ public class Esteganografia {
                     System.out.println("Mensaje oculto: " + resultado4);
                     break;
                 case 5:
-                    System.out.println("\nPruebe el mensaje:\nNo puedo coser porque no tengo hı́lo.\n");
+                    System.out.println("\nPruebe el mensaje:\nNo puedo coser porque no tengo hílo.\n"); 
                     System.out.print("Introduce el primer mensaje:");
                     String m2 = sc.nextLine();
-                    System.out.println("\nPruebe el mensaje:\nNo puedo cocer porque no tengo hilo.\n");
+                    System.out.println("\nPruebe el mensaje:\nNo puedo cocer porque no tengo hilo.\n"); 
                     System.out.print("Introduce el segundo mensaje:");
                     String e2 = sc.nextLine();
                     String resultado5 = estego.descifraLetrasMarcadas(m2, e2);
