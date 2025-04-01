@@ -1,6 +1,6 @@
 ## **Ejemplos de Uso**  
 
-A continuación, se presentan algunos ejemplos de prueba que puede utilizar en cada opción del menú(puede copiarlos o pegarlos):  
+A continuación, se presentan algunos ejemplos de prueba que puede utilizar en cada opción del menú(puede copiar y pegarlos):  
 
 ### **1. Descifrado con cifrado nulo (índice dado)**  
    **Mensaje de entrada:**  
