@@ -23,7 +23,7 @@ No hubo inconvenientes durante el desarrollo del proyecto.
 2. Compile el archvio Esteganografia.java con el siguiente comando desde la terminal:
 
    ```bash
-   javac Recipiente.java
+   javac Esteganografia.java
    ```
 3. Por último para ejecutar el programa use el siguiente comando:
 
