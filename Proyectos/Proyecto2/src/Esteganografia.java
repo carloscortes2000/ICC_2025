@@ -174,54 +174,74 @@ public class Esteganografia {
             switch (opcion) {
                 case 1:
                     System.out.println("\nPruebe el siguiente texto: \nPRESIDENT'S EMBARGO RULING SHOULD HAVE IMMEDIATE NOTICE. GRAVE SITUATION AFFECTING INTERNATIONAL LAW. STATEMENT FORESHADOWS RUIN OF MANY NEUTRALS. YELLOW JOURNALS UNIFYING NATIONAL EXCITEMENT IMMENSELY.\n");
+                    
                     System.out.print("Introduce el mensaje original:");
                     String original1 = sc.nextLine();
+                    
                     System.out.print("\nUtilice n = 1: \n");
                     System.out.print("Introduce el índice(n): ");
+                    
                     int n = Integer.parseInt(sc.nextLine());
                     String resultado1 = estego.descifraNulo(original1, n);
                     System.out.println("Mensaje oculto: " + resultado1);
                     break;
+
                 case 2:
                     System.out.println("\nPruebe el mensaje:\nLas tropas pasan(con tres espacios al final)\n");
+
                     System.out.print("Introduce el mensaje original (con espacios al final):");
                     String original2 = sc.nextLine();
+                    
                     String resultado2 = estego.descifraNulo(original2);
                     System.out.println("Mensaje oculto: " + resultado2);
                     break;
+
                 case 3:
                     System.out.println("\nPruebe el mensaje:\nNo seas leon o reina, pues t'ama. Cien males se doblan cada hora en que pene, Y en ti de tal guisa beldad pues se asienta, No seas cruel en así dar afrenta\n");
+                    
                     System.out.print("Introduce el mensaje en el que buscar:");
                     String mensaje = sc.nextLine();
+                    
                     System.out.println("\nIntente buscar los nombres: \nLeonor, Blanca, Isabel y Elena\n");
                     System.out.print("Introduce el nombre a buscar:");
                     String nombre = sc.nextLine();
+                    
                     boolean contiene = estego.contieneNombre(mensaje, nombre);
                     System.out.println("El mensaje " + (contiene ? "contiene" : "no contiene") + " el nombre.");
                     break;
+
                 case 4:
                     System.out.println("\nPruebe el mensaje:\nMañana tal vez nos preocupemos por cómo nos vemos.\n");
+                    
                     System.out.print("Introduce el primer mensaje:");
                     String m1 = sc.nextLine();
+                    
                     System.out.println("\nPruebe el mensaje:\nmañana tal vez noz preocupemos por cómo nos vennos.\n");
                     System.out.print("Introduce el segundo mensaje:");
                     String e1 = sc.nextLine();
+                    
                     String resultado4 = estego.descifraPalabrasMarcadas(m1, e1);
                     System.out.println("Mensaje oculto: " + resultado4);
                     break;
+
                 case 5:
                     System.out.println("\nPruebe el mensaje:\nNo puedo coser porque no tengo hílo.\n"); 
+                    
                     System.out.print("Introduce el primer mensaje:");
                     String m2 = sc.nextLine();
+                    
                     System.out.println("\nPruebe el mensaje:\nNo puedo cocer porque no tengo hilo.\n"); 
                     System.out.print("Introduce el segundo mensaje:");
                     String e2 = sc.nextLine();
+                    
                     String resultado5 = estego.descifraLetrasMarcadas(m2, e2);
                     System.out.println("Mensaje oculto: " + resultado5);
                     break;
+
                 case 6:
                     System.out.println("Saliendo del programa.");
                     break;
+                    
                 default:
                     System.out.println("Opción no válida. Intenta de nuevo.");
             }

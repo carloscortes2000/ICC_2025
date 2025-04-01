@@ -26,17 +26,17 @@ A continuación, se presentan algunos ejemplos de prueba que puede utilizar en c
 ### **4. Descifrado por palabras marcadas**  
    **Primer mensaje:**  
    ```
-   Mañana tal vez nos preocupemos por cómo nos vemos.
+   Mañana tal vez nos preocupemos por como nos vemos.
    ```  
    **Segundo mensaje:**  
    ```
-   mañana tal vez noz preocupemos por cómo nos vennos.
+   mañana tal vez noz preocupemos por como nos vennos.
    ```  
 
 ### **5. Descifrado por letras marcadas**  
    **Primer mensaje:**  
    ```
-   No puedo coser porque no tengo hı́lo.
+   No puedo coser porque no tengo hílo.
    ```  
    **Segundo mensaje:**  
    ```
