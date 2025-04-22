@@ -3,4 +3,4 @@ Repositorio para las prácticas de laboratorio: Introducción a Ciencias de la C
 
 Autor: Carlos Daniel Cortés Jiménez 
 
-Números de cuenta: 420004846
+Número de cuenta: 420004846
