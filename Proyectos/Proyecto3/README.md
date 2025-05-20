@@ -18,6 +18,10 @@ El jugador humano puede eligir cartas o terminar su turno, el jugador artificial
 
 No hubo inconvenientes durante el desarrollo del proyecto, solo muy confuso al principio dado que no se conocia el juego de mesa.
 
+### Extra
+
+Se realizó el ejercicio extra agregando jugadores artificiales compitiendo concurrentemente junto al usuario. Se agrego un delay para los jugadores artificiales de 10 a 20 segundos.
+
 ### Instrucciones para Ejecutar el Proyecto
 
 1. Tener instalado Java 8 o superior.

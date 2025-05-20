@@ -43,8 +43,24 @@ public class ListaCarta<T> {
     }
 
     /**
+     * Inserta o reemplaza un elemento en la posición indice.
+     * @param indice índice donde reemplazar
+     * @param elemento nuevo valor
+     */
+    public void agregarElementoEn(int indice, T elemento) {
+        if (indice < 0 || indice >= tamaño) {
+            throw new IndexOutOfBoundsException("Índice fuera de rango: " + indice);
+        }
+        Nodo<T> actual = cabeza;
+        for (int i = 0; i < indice; i++) {
+            actual = actual.siguiente;
+        }
+        actual.valor = elemento;
+    }
+
+    /**
      * Obtiene el elemento en la posición indicada.
-     * @param indice índice (0-based)
+     * @param indice índice
      * @return elemento en indice
      */
     public T obtenerElemento(int indice) {
